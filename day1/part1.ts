@@ -3,7 +3,7 @@ import * as fs from 'fs';
 const input: string = fs.readFileSync('./day1/input.txt', 'utf-8');
 const lines = input.split(/\r?\n/);
 
-const numbers = new Set<string>(["1", "2", "3", "4", "5", "6", "7", "8", "9"]) 
+const numbers = new Set<string>(["1", "2", "3", "4", "5", "6", "7", "8", "9"]);
 let sum = 0;
 
 for (const line of lines) {

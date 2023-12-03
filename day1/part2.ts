@@ -3,8 +3,6 @@ import * as fs from 'fs';
 const input: string = fs.readFileSync('./day1/input.txt', 'utf-8');
 const lines = input.split(/\r?\n/);
 
-//const lines = ["xfljqfbz5tzpldspxvgc"];
-
 const stringMap = new Map<string, number>();
 stringMap.set("1", 1);
 stringMap.set("2", 2);
@@ -57,7 +55,7 @@ function getCalibration(line: string) {
             substr1 = line.slice(p1, p2);
         }
     }
-    
+
     let q1 = line.length - 1;
     let q2 = line.length;
     let substr2 = line.slice(q1, q2);
