@@ -39,9 +39,6 @@ function getPartNumbers(schematic: string[]): number[] {
         const h = schematic.length;
         for (let y = Math.max(row - 1, 0); y <= Math.min(row + 1, h - 1); y++) {
             for (let x = Math.max(col - 1, 0); x <= Math.min(col + 1, w - 1); x++) {
-                if (y === row && x === col) {
-                    continue;
-                }
                 if (isSymbol(schematic[y][x])) {
                     return true;
                 }
