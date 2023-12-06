@@ -1,6 +1,6 @@
 import * as fs from 'fs';
 
-const input: string = fs.readFileSync('./day5/input.txt', 'utf-8').trim();;
+const input: string = fs.readFileSync('./day5/input.txt', 'utf-8').trim();
 
 type DataMap = {
     destinationRangeStart: number,
